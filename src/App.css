@@ -1,7 +1,19 @@
+.header-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
-.app-body {
-    background-image: url('/src/assets/banner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 -30vh;
+.header-wave svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 561px;
+}
+
+.header-wave .shape-fill {
+    fill: #262626;
 }
