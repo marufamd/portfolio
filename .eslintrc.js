@@ -24,6 +24,7 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'semi': 1,
     'import/extensions': 0,
+    'import/no-extraneous-dependencies': 0,
     'unicorn/prefer-query-selector': 0,
     'react/jsx-sort-props': 0,
     'typescript-sort-keys/interface': 0
