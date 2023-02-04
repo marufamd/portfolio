@@ -86,7 +86,8 @@ export default function InfoBox() {
 						<ul
 							className="
 					grid
-					grid-cols-3
+					grid-cols-9
+					md:grid-cols-3
 					gap-3
 					text-white
 					py-3
