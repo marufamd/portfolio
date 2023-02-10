@@ -15,7 +15,7 @@ export default function App() {
 				</div>
 				<InfoBox />
 			</div>
-			<footer className="mx-auto fixed bottom-0 w-screen flex justify-center items-center p-4">
+			<footer className="mx-auto bg-neutral-800 md:bg-transparent md:fixed bottom-0 w-screen flex justify-center items-center p-4">
 				<h3 className="text-sm text-white">© 2023 maruf99</h3>
 			</footer>
 		</div>

@@ -31,7 +31,7 @@ export default function InfoBox() {
                     container
 					m-10
                     h-auto
-                    w-96
+                    sm:w-96
 					md:w-128
 					px-8
                     py-10
