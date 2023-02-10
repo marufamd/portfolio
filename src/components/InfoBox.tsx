@@ -105,7 +105,7 @@ export default function InfoBox() {
 
 				<div className="flex flex-row w-96 justify-center space-x-3">
 					<IconButton src={github} alt="GitHub" href="https://github.com/maruf99" />
-					<IconButton src={email} alt="GitHub" href="mailto:themaruf99@gmail.com" />
+					<IconButton src={email} alt="Email" href="mailto:themaruf99@gmail.com" />
 				</div>
 			</div>
 		</div>
