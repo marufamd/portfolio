@@ -5,29 +5,27 @@ import { IoSunny } from 'react-icons/io5';
 const THEME_KEY = 'dark-theme';
 
 export default function ColorModeToggle() {
-	const [darkTheme, setDarkTheme] = useState(false);
+	const [darkTheme, setDarkTheme] = useState(true);
 
 	useEffect(() => {
-		let isDark = localStorage.getItem(THEME_KEY) === 'true';
+		const isDark = localStorage.getItem(THEME_KEY) ? localStorage.getItem(THEME_KEY) === 'true' : true;
 
-		if (isDark === null) {
-			isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-		}
-
-        localStorage.setItem(THEME_KEY, isDark.toString());
-        setDarkTheme(isDark);
+		localStorage.setItem(THEME_KEY, isDark.toString());
+		setDarkTheme(isDark);
 	}, []);
 
-    useEffect(() => {
-        document.documentElement.classList.toggle('dark', darkTheme);
-        localStorage.setItem(THEME_KEY, darkTheme.toString());
-    }, [darkTheme]);
+	useEffect(() => {
+		document.documentElement.classList.toggle('dark', darkTheme);
+		localStorage.setItem(THEME_KEY, darkTheme.toString());
+	}, [darkTheme]);
 
-    return (
-        <button
-        type="button"
-        onClick={() => { setDarkTheme((prev) => !prev); }}
-        className="
+	return (
+		<button
+			type="button"
+			onClick={() => {
+				setDarkTheme((prev) => !prev);
+			}}
+			className="
         flex
         items-center
 		justify-center
@@ -42,9 +40,9 @@ export default function ColorModeToggle() {
         hover:transition-all
         hover:opacity-75
         "
-        >
-            <span className="pr-2">{darkTheme ? <IoSunny /> : <FaMoon />}</span>
-            {darkTheme ? 'Light' : 'Dark'} Mode
-        </button>
-    );
+		>
+			<span className="pr-2">{darkTheme ? <IoSunny /> : <FaMoon />}</span>
+			{darkTheme ? 'Light' : 'Dark'} Mode
+		</button>
+	);
 }
