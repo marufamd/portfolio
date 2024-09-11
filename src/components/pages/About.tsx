@@ -5,7 +5,7 @@ export default function About({ active }: { active: boolean }) {
 	return active ? (
 		<div className="flex flex-col items-center gap-8">
 			<p className="text-md md:text-lg">
-				I'm a first-year Computer Science student at Toronto Metropolitan University (formerly known as Ryerson). I first began programming at
+				I'm a Computer Science student at Toronto Metropolitan University (formerly known as Ryerson). I first began programming at
 				the age of 11, where I learned <span className="font-bold">JavaScript </span>
 				and started creating small scripts using <span className="font-bold">Node.js</span>. I've since branched out to programming primarily
 				in <span className="font-bold">TypeScript</span>, <span className="font-bold">Python</span>, and{' '}
