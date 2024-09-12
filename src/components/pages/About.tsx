@@ -14,7 +14,7 @@ export default function About({ active }: { active: boolean }) {
 				<br />
 				While creating applications using these languages, I gained experience using industry-standard tools and technologies such as{' '}
 				<span className="font-bold">React</span>, <span className="font-bold">PostgreSQL</span>, and{' '}
-				<span className="font-bold">Express</span>. I am currently seeking internships for the Summer 2024 period in order to gain more
+				<span className="font-bold">Express</span>. I am currently seeking internships in order to gain more
 				experience in the industry and apply the skills I have learned over the years in a real-world setting. You can contact me through the
 				links below.
 			</p>
