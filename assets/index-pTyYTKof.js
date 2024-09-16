@@ -140,7 +140,7 @@ Error generating stack: `+o.message+`
         `,children:Object.entries(xc).map(([t,n])=>S.jsx(kc,{name:t,Icon:n,className:`
                 h-10
                 text-xl
-                `},t))})]}):null}const R0="/assets/react-arena-bUSfSPLS.png",M0="/assets/robotman-YS-T_b_C.png",O0={About:P0,Projects:j0,Skills:L0},Pr={FIRST_NAME:"Maruf",LAST_NAME:"Ahmed",AVATAR:"https://avatars.githubusercontent.com/u/25273018"},I0=[{url:"https://github.com/maruf99",icon:wc},{url:"https://www.linkedin.com/in/maruf-ahmed-a511562a3/",icon:r0},{url:"mailto:maruf.ahmed@torontomu.ca",icon:v0}],D0=[{name:"React Arena",description:na`
+                `},t))})]}):null}const R0="/assets/react-arena-bUSfSPLS.png",M0="/assets/robotman-YS-T_b_C.png",O0={About:P0,Projects:j0,Skills:L0},Pr={FIRST_NAME:"Maruf",LAST_NAME:"Ahmed",AVATAR:"https://avatars.githubusercontent.com/u/25273018"},I0=[{url:"https://github.com/maruf99",icon:wc},{url:"https://www.linkedin.com/in/maruf-amd/",icon:r0},{url:"mailto:maruf.ahmed@torontomu.ca",icon:v0}],D0=[{name:"React Arena",description:na`
         React Arena is a demo ticket-booking interface web application using React and Next.js.
         This demo app was created to gain experience in frontend web development. By working on this project,
         I learned skills related to web development such as state management, creating responsive webpages,
