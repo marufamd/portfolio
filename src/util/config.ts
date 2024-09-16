@@ -42,7 +42,7 @@ export const LINK_BUTTONS = [
 		icon: FaGithub
 	},
 	{
-		url: 'https://www.linkedin.com/in/maruf-ahmed-a511562a3/',
+		url: 'https://www.linkedin.com/in/maruf-amd/',
 		icon: FaLinkedin
 	},
 	{
