@@ -7,16 +7,19 @@ export default function ProjectCard({ name, description, thumbnail, github, url,
 	return (
 		<div
 			className="
-        flex container 
+        flex
         rounded-3xl 
         bg-gray-200 
         dark:bg-neutral-900
         drop-shadow-lg"
 		>
 			<img src={thumbnail} className="hidden md:block w-48 h-48 py-4 pl-4" alt={name} />
-			<div className="flex flex-col space-y-1 p-4">
-				<h2 className="text-lg font-bold">{name}</h2>
-				<h3 className="text-sm">{description}</h3>
+			<div className="flex flex-col space-y-2 p-4">
+				<div className="flex flex-row gap-2 items-center">
+					<img src={thumbnail} className="w-6 h-6 md:hidden" alt={name} />
+					<h2 className="text-[30px] font-semibold font-['Afacad_Flux']">{name}</h2>
+				</div>
+				<h3 className="text-md">{description}</h3>
 				<div
 					className="
 				flex

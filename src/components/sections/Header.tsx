@@ -3,7 +3,7 @@ import IconButton from '../IconButton';
 
 export default function Header() {
 	return (
-		<div className="bg-sunset-gradient text-white">
+		<header id="about" className="bg-sunset-gradient text-white">
 			<div className="p-10 lg:mx-32 flex flex-col lg:flex-row items-center justify-center lg:space-x-4 space-y-4 lg:space-y-0">
 				<article className="basis-1/2">
 					<h1 className="text-[60px] font-['Afacad_Flux'] font-semibold">Hi, I'm Maruf!</h1>
@@ -35,10 +35,10 @@ export default function Header() {
 						})}
 					</div>
 				</article>
-				<div className="py-4 basis-1/2 order-first lg:order-last flex items-center justify-center mt-0 ml-0">
+				<div className="py-4 basis-1/2 order-first lg:order-last flex items-center justify-center mt-0 ml-0 drop-shadow-lg">
 					<img src={USER.AVATAR} width="100%" height="100%" className="block rounded-full w-48 h-48 lg:w-auto lg:h-auto" />
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 }

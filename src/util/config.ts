@@ -3,14 +3,25 @@ import type { IconType } from 'react-icons';
 import { FaGithub, FaJava, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import {
+	SiArduino,
+	SiBootstrap,
+	SiChakraui,
+	SiCplusplus,
+	SiCss3,
 	SiExpress,
 	SiGit,
+	SiGithub,
+	SiHtml5,
 	SiIntellijidea,
 	SiJavascript,
 	SiNextdotjs,
+	SiNginx,
+	SiNodedotjs,
 	SiPostgresql,
+	SiPycharm,
 	SiPython,
 	SiReact,
+	SiTailwindcss,
 	SiTypescript,
 	SiVisualstudiocode
 } from 'react-icons/si';
@@ -30,15 +41,16 @@ export const USER = {
 export const NAV_LINKS = [
 	'About',
 	'Projects',
-	'Skills',
-	'Contact'
+	'Skills'
 ];
 
 export const RESUME_LINK = "about:black";
 
+const GITHUB_URL = 'https://github.com/marufamd';
+
 export const LINK_BUTTONS = [
 	{
-		url: 'https://github.com/maruf99',
+		url: GITHUB_URL,
 		icon: FaGithub
 	},
 	{
@@ -70,8 +82,8 @@ export const PROJECTS = [
         and optimization using React Hooks.
         `,
 		thumbnail: ReactArenaThumbnail,
-		github: 'https://github.com/maruf99/react-arena',
-		url: 'https://arena.marufdev.me/',
+		github: `${GITHUB_URL}/react-arena`,
+		url: 'https://react-arena-five.vercel.app/',
 		technologies: ['TypeScript', 'React', 'Next.js']
 	},
 	{
@@ -86,8 +98,8 @@ export const PROJECTS = [
         relational databases, and using REST APIs to communicate between the backend and frontend.
         `,
 		thumbnail: RobotmanThumbnail,
-		github: 'https://github.com/maruf99/robotman',
-		url: 'https://robotman.marufdev.me/',
+		github: `${GITHUB_URL}/robotman`,
+		url: 'https://robotman.tech/',
 		technologies: ['TypeScript', 'React', 'PostgreSQL', 'Express', 'Next.js']
 	}
 ] as Project[];
@@ -97,11 +109,22 @@ export const ICONS = {
 	JavaScript: SiJavascript,
 	Java: FaJava,
 	Python: SiPython,
+	'C++': SiCplusplus,
+	HTML: SiHtml5,
+	CSS: SiCss3,
 	React: SiReact,
+	Arduino: SiArduino,
+	'Node.js': SiNodedotjs,
 	PostgreSQL: SiPostgresql,
 	Express: SiExpress,
 	'Next.js': SiNextdotjs,
-	'VS Code': SiVisualstudiocode,
+	TailwindCSS: SiTailwindcss,
+	Bootstrap: SiBootstrap,
+	'Chakra UI': SiChakraui,
 	Git: SiGit,
-	'IntelliJ IDEA': SiIntellijidea
+	GitHub: SiGithub,
+	'VS Code': SiVisualstudiocode,
+	PyCharm: SiPycharm,
+	'IntelliJ IDEA': SiIntellijidea,
+	Nginx: SiNginx
 } as Record<string, IconType>;

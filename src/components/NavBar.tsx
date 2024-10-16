@@ -14,6 +14,7 @@ const THEME_KEY = 'dark-theme';
 export default function NavBar() {
 	const [darkTheme, setDarkTheme] = useState(true);
 	const [isOpen, setIsOpen] = useState(false);
+	
 
 	useEffect(() => {
 		const isDark = localStorage.getItem(THEME_KEY) ? localStorage.getItem(THEME_KEY) === 'true' : true;
@@ -28,7 +29,7 @@ export default function NavBar() {
 	}, [darkTheme]);
 
 	return (
-		<nav className="py-1 top-0 sticky bg-white dark:bg-neutral-800 border-b-gray-100 dark:border-b-neutral-900 border-b-2">
+		<nav className="py-1 top-0 sticky z-50 bg-white dark:bg-neutral-800 border-b-gray-100 dark:border-b-neutral-900 border-b-2">
 			<div className="flex items-center justify-between">
 				<div className="hidden md:inline dark:hidden m-2">
 					<img className="h-10" src={logo} alt="Logo" />
