@@ -6,7 +6,7 @@ export default function Header() {
 		<header id="about" className="bg-sunset-gradient text-white">
 			<div className="p-10 lg:mx-32 flex flex-col lg:flex-row items-center justify-center lg:space-x-4 space-y-4 lg:space-y-0">
 				<article className="basis-1/2">
-					<h1 className="text-[60px] font-['Afacad_Flux'] font-semibold">Hi, I'm Maruf!</h1>
+					<h1 className="text-[50px] md:text-[60px] font-['Afacad_Flux'] font-semibold">Hi, I'm Maruf!</h1>
 					<p className="text-md">
 						I'm a Computer Science student at Toronto Metropolitan University (formerly known as Ryerson). I began programming by learning{' '}
 						<span className="font-bold">JavaScript </span>
