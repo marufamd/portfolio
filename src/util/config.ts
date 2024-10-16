@@ -15,26 +15,26 @@ import {
 	SiVisualstudiocode
 } from 'react-icons/si';
 
-import About from '../components/pages/About';
-import Projects from '../components/pages/Projects';
-import Skills from '../components/pages/Skills';
 
 import ReactArenaThumbnail from '../assets/thumbnails/react-arena.png';
 import RobotmanThumbnail from '../assets/thumbnails/robotman.png';
 
 export type Page = ({ active }: { active: boolean }) => JSX.Element;
 
-export const TABS = {
-	About,
-	Projects,
-	Skills
-} as Record<string, Page>;
-
 export const USER = {
 	FIRST_NAME: 'Maruf',
 	LAST_NAME: 'Ahmed',
 	AVATAR: 'https://avatars.githubusercontent.com/u/25273018'
 };
+
+export const NAV_LINKS = [
+	'About',
+	'Projects',
+	'Skills',
+	'Contact'
+];
+
+export const RESUME_LINK = "about:black";
 
 export const LINK_BUTTONS = [
 	{

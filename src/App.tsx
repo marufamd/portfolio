@@ -1,14 +1,20 @@
 import Footer from './components/Footer';
-import TabSelector from './components/TabSelector';
-import UserDisplay from './components/UserDisplay';
-import { TABS, USER } from './util/config';
+import NavBar from './components/NavBar';
+import Header from './components/sections/Header';
+import Projects from './components/sections/Projects';
+import Skills from './components/sections/Skills';
+import { USER } from './util/config';
 
 function App() {
 	return (
 		<>
-			<UserDisplay name={USER.FIRST_NAME} icon={USER.AVATAR} />
-			<TabSelector tabs={TABS} />
-			<Footer name={`${USER.FIRST_NAME} ${USER.LAST_NAME}`}/>
+			<NavBar />
+			<Header />
+			<main>
+				<Projects />
+				<Skills />
+			</main>
+			<Footer name={`${USER.FIRST_NAME} ${USER.LAST_NAME}`} />
 		</>
 	);
 }
