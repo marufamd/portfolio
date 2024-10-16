@@ -41,7 +41,7 @@ export default function NavBar() {
 					<img className="w-10 h-10 rounded-full" src={profile} alt="Logo" />
 				</div>
 
-				<div className="flex items-center justify-center mr-2">
+				<div className="flex items-center justify-center">
 					<div className="flex flex-row justify-center space-x-4 mr-4">
 						{NAV_LINKS.map((link) => {
 							return (
