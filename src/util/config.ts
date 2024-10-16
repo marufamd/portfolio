@@ -44,8 +44,6 @@ export const NAV_LINKS = [
 	'Skills'
 ];
 
-export const RESUME_LINK = "about:black";
-
 const GITHUB_URL = 'https://github.com/marufamd';
 
 export const LINK_BUTTONS = [

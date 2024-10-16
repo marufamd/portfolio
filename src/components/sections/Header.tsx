@@ -1,4 +1,4 @@
-import { LINK_BUTTONS, RESUME_LINK, USER } from '../../util/config';
+import { LINK_BUTTONS, USER } from '../../util/config';
 import IconButton from '../IconButton';
 
 export default function Header() {
@@ -18,18 +18,9 @@ export default function Header() {
 						Through my projects, I have gained experience using industry-standard tools and technologies such as{' '}
 						<span className="font-bold">React</span>, <span className="font-bold">PostgreSQL</span>, and{' '}
 						<span className="font-bold">Express</span>. I am currently seeking internships in order to gain more experience in the
-						industry and apply the skills I have learned over the years in a real-world setting. Feel free to check out my resume!
+						industry and apply the skills I have learned over the years in a real-world setting.
 					</p>
 					<div className="flex flex-row mt-5 items-center justify-start space-x-3">
-						<a href={RESUME_LINK} target="_blank" rel="noopener noreferrer">
-							<button
-								type="button"
-								className="rounded-full text-sm font-bold px-5 py-2 outline outline-2 outline-white hover:bg-white hover:text-black transition-all"
-							>
-								Resume
-							</button>
-						</a>
-						<div className="border-white border-[1px] h-10" />
 						{LINK_BUTTONS.map((b, i) => {
 							return <IconButton key={i} href={b.url} Icon={b.icon} />;
 						})}
