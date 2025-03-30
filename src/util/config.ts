@@ -14,6 +14,7 @@ import {
 	SiHtml5,
 	SiIntellijidea,
 	SiJavascript,
+	SiMantine,
 	SiNextdotjs,
 	SiNginx,
 	SiNodedotjs,
@@ -21,6 +22,7 @@ import {
 	SiPycharm,
 	SiPython,
 	SiReact,
+	SiSpringboot,
 	SiTailwindcss,
 	SiTypescript,
 	SiVisualstudiocode
@@ -29,6 +31,7 @@ import {
 
 import ReactArenaThumbnail from '../assets/thumbnails/react-arena.png';
 import RobotmanThumbnail from '../assets/thumbnails/robotman.png';
+import ClassTaskThumbnail from '../assets/thumbnails/classtask.png';
 
 export type Page = ({ active }: { active: boolean }) => JSX.Element;
 
@@ -71,6 +74,18 @@ export interface Project {
 }
 
 export const PROJECTS = [
+	{
+		name: 'ClassTask',
+		description: stripIndents`
+		ClassTask is a progressive web app I created to help me manage my coursework in university. I wanted a simple app to track assignment deadlines and exam dates for different courses that didn't have the bloat of other apps like Notion.
+
+		The frontend is a PWA React application written in TypeScript that uses Mantine UI. The backend is a Spring Boot application written in Java. This was my first time using Spring Boot, and taught me a lot about Object oriented programming and writing applications in Java.
+		`,
+		thumbnail: ClassTaskThumbnail,
+		github: `${GITHUB_URL}/classtask`,
+		url: 'https://classtask.maruf.dev',
+		technologies: ['TypeScript', 'Java', 'React', "Spring Boot", "PostgreSQL"]
+	},
 	{
 		name: 'React Arena',
 		description: stripIndents`
@@ -124,5 +139,7 @@ export const ICONS = {
 	'VS Code': SiVisualstudiocode,
 	PyCharm: SiPycharm,
 	'IntelliJ IDEA': SiIntellijidea,
-	Nginx: SiNginx
+	Nginx: SiNginx,
+	'Spring Boot': SiSpringboot,
+	'Mantine UI': SiMantine
 } as Record<string, IconType>;
