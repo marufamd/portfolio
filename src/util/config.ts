@@ -18,11 +18,13 @@ import {
 	SiNextdotjs,
 	SiNginx,
 	SiNodedotjs,
+	SiPayloadcms,
 	SiPostgresql,
 	SiPycharm,
 	SiPython,
 	SiReact,
 	SiSpringboot,
+	SiSupabase,
 	SiTailwindcss,
 	SiTypescript,
 	SiVisualstudiocode
@@ -32,6 +34,7 @@ import {
 import ReactArenaThumbnail from '../assets/thumbnails/react-arena.png';
 import RobotmanThumbnail from '../assets/thumbnails/robotman.png';
 import ClassTaskThumbnail from '../assets/thumbnails/classtask.png';
+import USSTMThumbnail from '../assets/thumbnails/usstm.png';
 
 export type Page = ({ active }: { active: boolean }) => JSX.Element;
 
@@ -75,6 +78,30 @@ export interface Project {
 
 export const PROJECTS = [
 	{
+		name: 'USSTM Website',
+		description: stripIndents`
+		As Tech Manager for the Undergraduate Science Society of Toronto Metropolitan (USSTM), one of my responsibilities is maintaining the organization's official website. When I inherited the codebase, it was a static React application with content hardcoded throughout. This was a maintenance nightmare as members and policies change annually.
+
+		I led a complete redesign, transforming the site into a full-stack TypeScript Next.js application backed by PayloadCMS. This modern architecture enables non-technical members to manage content independently, dramatically reducing maintenance overhead.
+		`,
+		thumbnail: USSTMThumbnail,
+		github: 'https://github.com/PACS-TMU/usstm-website',
+		url: 'https://usstm.ca',
+		technologies: ['TypeScript', 'React', 'Next.js', 'PostgreSQL', 'Supabase', 'PayloadCMS']
+	},
+	/*
+	{
+		name: 'SecureBYTE',
+		description: stripIndents`
+		As a developer for BYTE TMU, I collaborated with 30+ developers to create SecureBYTE, an AI-powered
+		`,
+		thumbnail: 'https://via.placeholder.com/150',
+		github: '',
+		url: '',
+		technologies: ['JavaScript', 'Python', 'React', 'Flask', 'Firebase', 'ChromaDB']
+	},
+	*/
+	{
 		name: 'ClassTask',
 		description: stripIndents`
 		ClassTask is a progressive web app I created to help me manage my coursework in university. I wanted a simple app to track assignment deadlines and exam dates for different courses that didn't have the bloat of other apps like Notion.
@@ -112,7 +139,7 @@ export const PROJECTS = [
         `,
 		thumbnail: RobotmanThumbnail,
 		github: `${GITHUB_URL}/robotman`,
-		url: 'https://robotman.tech/',
+		url: 'https://robotman-dashboard.vercel.app/',
 		technologies: ['TypeScript', 'React', 'PostgreSQL', 'Express', 'Next.js']
 	}
 ] as Project[];
@@ -141,5 +168,7 @@ export const ICONS = {
 	'IntelliJ IDEA': SiIntellijidea,
 	Nginx: SiNginx,
 	'Spring Boot': SiSpringboot,
-	'Mantine UI': SiMantine
+	'Mantine UI': SiMantine,
+	Supabase: SiSupabase,
+	PayloadCMS: SiPayloadcms
 } as Record<string, IconType>;

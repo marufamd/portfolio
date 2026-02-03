@@ -19,7 +19,11 @@ export default function ProjectCard({ name, description, thumbnail, github, url,
 					<img src={thumbnail} className="w-6 h-6 md:hidden" alt={name} />
 					<h2 className="text-[30px] font-semibold font-['Afacad_Flux']">{name}</h2>
 				</div>
-				<h3 className="text-md">{description}</h3>
+				<div className="text-md space-y-3">
+					{description.split('\n\n').map((paragraph, index) => (
+						<p key={index}>{paragraph}</p>
+					))}
+				</div>
 				<div
 					className="
 				flex
