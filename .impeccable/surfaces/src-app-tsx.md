@@ -7,12 +7,12 @@ related_targets: []
 
 ## Scope
 
-maruf.dev home page (single page). Mode: Read. Audience: recruiters and hiring managers screening quickly.
+maruf.dev home page (single page). Mode: Read. Audience: visitors who want a quick, accurate picture.
 
 ## Surface strategy
 
 - Job: confirm current role, past roles, education; reach GitHub/LinkedIn in one click.
-- Content: LinkedIn experience as supplied (Shopify, RBC, Enercare internships); Education: Toronto Metropolitan University, Computer Science (dates/degree not yet supplied).
+- Content: experience as supplied (Shopify, RBC, Enercare internships); Education: Toronto Metropolitan University, Computer Science (dates/degree not yet supplied).
 - Constraints: minimal; light/dark toggle (dark default); sunset gradient kept; no email link; no Projects or Skills.
 - Unresolved: education dates and degree; headline copy beyond role facts.
 

@@ -1,6 +1,6 @@
 ---
 name: Maruf Ahmed
-description: A plain developer profile in warm stone with one sunset gradient, for recruiters who want the facts fast.
+description: A plain developer profile in warm stone with one sunset gradient, for visitors who want the facts fast.
 colors:
   sunset-orange: "#fb923c"
   sunset-red: "#ef4444"
@@ -107,7 +107,7 @@ components:
 
 This is the developer-portfolio standard, played straight. A slim sticky nav, a centred reading column, a cover banner with a round avatar overlapping its lower-left edge, a name at display size, two labelled outline buttons, then a vertical timeline of roles and schooling. Nothing asks to be learned. The craft is in exact spacing, honest hierarchy, and restraint rather than in any device the visitor has not seen before.
 
-The world is warm stone in both modes, dark by default, with a single warm signature: the sunset gradient. It appears exactly twice, as the cover banner and as the current-role marker on the timeline, so the eye finds "who" and "now" without searching. A red signal (red-600 in light, red-400 in dark) carries interaction: focus rings, the outline-button hover, text selection, native control accents. Afacad Flux, self-hosted, gives the name and section headings a soft, slightly humanist voice; everything a recruiter actually reads is in the system sans.
+The world is warm stone in both modes, dark by default, with a single warm signature: the sunset gradient. It appears exactly twice, as the cover banner and as the current-role marker on the timeline, so the eye finds "who" and "now" without searching. A red signal (red-600 in light, red-400 in dark) carries interaction: focus rings, the outline-button hover, text selection, native control accents. Afacad Flux, self-hosted, gives the name and section headings a soft, slightly humanist voice; everything a visitor actually reads is in the system sans.
 
 Density is low and the page is short. Depth is flat: hairline rules and tonal fills, no shadows. Motion is a single load gesture on the cover and avatar, and it disappears under reduced motion.
 
