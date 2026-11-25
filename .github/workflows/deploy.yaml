@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches: [rewrite]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and publish to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Publish dist to the gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >
+          npx gh-pages --dist dist --nojekyll --silent
+          --message "deploy: ${{ github.sha }}"
+          --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          --repo "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
