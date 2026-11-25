@@ -39,7 +39,7 @@ export interface Experience {
 	workplace: string;
 }
 
-// Copied from LinkedIn. Keep in step with the profile, newest first.
+// Newest first.
 export const EXPERIENCE: Experience[] = [
 	{
 		company: 'Shopify',

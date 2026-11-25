@@ -2,7 +2,7 @@
 
 Source for [maruf.dev](https://maruf.dev), written in TypeScript with React and Tailwind CSS.
 
-Experience and education live in `src/util/config.ts`; keep them in step with LinkedIn.
+Experience and education live in `src/util/config.ts`.
 
 ```sh
 npm run dev      # local dev server
