@@ -10,8 +10,8 @@ export default function Experience() {
 				{EXPERIENCE.map((job) => (
 					<TimelineItem
 						key={`${job.company}-${job.start}`}
-						title={job.title}
-						subtitle={`${job.company} · ${job.type}`}
+						title={job.company}
+						subtitle={job.role}
 						dates={`${formatMonth(job.start)} – ${job.end ? formatMonth(job.end) : 'Present'}`}
 						current={!job.end}
 					>

@@ -200,7 +200,7 @@ A 144px (192px at sm) full-column block filled with the sunset gradient at 16px 
 - **Load motion:** the banner reveals from a clip of `inset(0 0 22% 0 round 1rem)` at 60% saturation to full, and the avatar rises 10px from 96% scale, 120ms later. Both run 900ms on `cubic-bezier(0.16, 1, 0.3, 1)`. Under `prefers-reduced-motion` all animation is removed and transitions collapse to near zero. This is the only entrance motion on the page.
 
 ### Timeline Item (signature)
-An ordered list with a 1px stone spine. Each item: an 11px dot at the top-left, the current role's dot filled with the sunset gradient and every other dot hollow (2px stone border, page fill); a title (role or school), a subtitle (company · employment type, or programme); the date range on the right (no duration); then a muted location · workplace line. No team lines, descriptions or skill chips. The spine stops at the last item. Experience lists reverse-chronologically; Education reuses the same item.
+An ordered list with a 1px stone spine. Each item: an 11px dot at the top-left, the current role's dot filled with the sunset gradient and every other dot hollow (2px stone border, page fill); a title (company, or school), a subtitle (role, or programme); the date range on the right (no duration); then a muted location · workplace line. No team lines, descriptions or skill chips. The spine stops at the last item. Experience lists reverse-chronologically; Education reuses the same item.
 
 ## Do's and Don'ts
 

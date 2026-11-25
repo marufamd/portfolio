@@ -30,9 +30,8 @@ export const PROFILE_LINKS: ProfileLink[] = [
 type YearMonth = `${number}-${string}`;
 
 export interface Experience {
-	title: string;
 	company: string;
-	type: string;
+	role: string;
 	start: YearMonth;
 	// Omit for a current role.
 	end?: YearMonth;
@@ -43,26 +42,23 @@ export interface Experience {
 // Copied from LinkedIn. Keep in step with the profile, newest first.
 export const EXPERIENCE: Experience[] = [
 	{
-		title: 'Software Engineer',
 		company: 'Shopify',
-		type: 'Internship',
+		role: 'Software Engineer Intern',
 		start: '2026-09',
 		location: 'Toronto, Ontario, Canada',
 		workplace: 'Hybrid'
 	},
 	{
-		title: 'Software Engineer',
 		company: 'RBC',
-		type: 'Internship',
+		role: 'Software Engineer Intern',
 		start: '2026-05',
 		end: '2026-09',
 		location: 'Toronto, Ontario, Canada',
 		workplace: 'Hybrid'
 	},
 	{
-		title: 'Software Engineer',
 		company: 'Enercare Inc.',
-		type: 'Internship',
+		role: 'Software Engineer Intern',
 		start: '2025-05',
 		end: '2026-04',
 		location: 'Markham, Ontario, Canada',
