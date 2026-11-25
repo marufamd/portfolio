@@ -34,5 +34,5 @@ jobs:
         run: >
           npx gh-pages --dist dist --nojekyll --silent
           --message "deploy: ${{ github.sha }}"
-          --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          --user '"github-actions[bot]" <github-actions@users.noreply.github.com>'
           --repo "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
