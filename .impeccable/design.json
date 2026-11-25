@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T00:00:00Z",
+  "title": "Design System: Maruf Ahmed",
+  "extensions": {
+    "colorMeta": {
+      "sunset-orange": {
+        "role": "primary",
+        "displayName": "Sunset Orange (gradient start, orange-400)",
+        "canonical": "#fb923c",
+        "tonalRamp": [
+          "#431407",
+          "#7c2d12",
+          "#9a3412",
+          "#c2410c",
+          "#ea580c",
+          "#f97316",
+          "#fb923c",
+          "#fed7aa"
+        ]
+      },
+      "sunset-red": {
+        "role": "primary",
+        "displayName": "Sunset Red (gradient mid, red-500)",
+        "canonical": "#ef4444",
+        "tonalRamp": [
+          "#450a0a",
+          "#7f1d1d",
+          "#991b1b",
+          "#b91c1c",
+          "#dc2626",
+          "#ef4444",
+          "#f87171",
+          "#fecaca"
+        ]
+      },
+      "sunset-deep": {
+        "role": "primary",
+        "displayName": "Sunset Deep (gradient end, red-700)",
+        "canonical": "#b91c1c",
+        "tonalRamp": [
+          "#450a0a",
+          "#7f1d1d",
+          "#991b1b",
+          "#b91c1c",
+          "#dc2626",
+          "#ef4444",
+          "#f87171",
+          "#fecaca"
+        ]
+      },
+      "signal-red": {
+        "role": "primary",
+        "displayName": "Signal Red (light mode, red-600)",
+        "canonical": "#dc2626",
+        "tonalRamp": [
+          "#450a0a",
+          "#7f1d1d",
+          "#991b1b",
+          "#b91c1c",
+          "#dc2626",
+          "#ef4444",
+          "#f87171",
+          "#fecaca"
+        ]
+      },
+      "signal-red-night": {
+        "role": "primary",
+        "displayName": "Signal Red Night (dark mode, red-400)",
+        "canonical": "#f87171",
+        "tonalRamp": [
+          "#450a0a",
+          "#7f1d1d",
+          "#991b1b",
+          "#b91c1c",
+          "#dc2626",
+          "#ef4444",
+          "#f87171",
+          "#fecaca"
+        ]
+      },
+      "stone-paper": {
+        "role": "neutral",
+        "displayName": "Stone Paper (light page, stone-50)",
+        "canonical": "#fafaf9",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-chip": {
+        "role": "neutral",
+        "displayName": "Stone Chip (light chip/hover fill, stone-200 at 70%)",
+        "canonical": "#e7e5e4",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-rule": {
+        "role": "neutral",
+        "displayName": "Stone Rule (light hairline, stone-200)",
+        "canonical": "#e7e5e4",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-stroke": {
+        "role": "neutral",
+        "displayName": "Stone Stroke (light outline, stone-300)",
+        "canonical": "#d6d3d1",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-muted": {
+        "role": "neutral",
+        "displayName": "Stone Muted (light muted text, stone-600)",
+        "canonical": "#57534e",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-secondary": {
+        "role": "neutral",
+        "displayName": "Stone Secondary (light secondary text, stone-700)",
+        "canonical": "#44403c",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-ink": {
+        "role": "neutral",
+        "displayName": "Stone Ink (light text, stone-900)",
+        "canonical": "#1c1917",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night": {
+        "role": "neutral",
+        "displayName": "Stone Night (dark page, stone-950)",
+        "canonical": "#0c0a09",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night-rule": {
+        "role": "neutral",
+        "displayName": "Stone Night Rule (dark hairline and chip fill, stone-800)",
+        "canonical": "#292524",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night-stroke": {
+        "role": "neutral",
+        "displayName": "Stone Night Stroke (dark outline, stone-700)",
+        "canonical": "#44403c",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night-muted": {
+        "role": "neutral",
+        "displayName": "Stone Night Muted (dark muted text, stone-400)",
+        "canonical": "#a8a29e",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night-secondary": {
+        "role": "neutral",
+        "displayName": "Stone Night Secondary (dark secondary text, stone-300)",
+        "canonical": "#d6d3d1",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      },
+      "stone-night-ink": {
+        "role": "neutral",
+        "displayName": "Stone Night Ink (dark text, stone-100)",
+        "canonical": "#f5f5f4",
+        "tonalRamp": [
+          "#1c1917",
+          "#292524",
+          "#44403c",
+          "#57534e",
+          "#78716c",
+          "#a8a29e",
+          "#d6d3d1",
+          "#f5f5f4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the header only; 48px, 60px at sm."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s; 30px, 36px at sm."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Timeline item titles (role, school)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The one-line role headline under the name, muted, max 60ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Timeline subtitles and running text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, nav links, dates (tabular), location and team lines, footer."
+      },
+      "chip": {
+        "displayName": "Chip",
+        "purpose": "Skill chips."
+      }
+    },
+    "gradients": [
+      {
+        "name": "sunset-gradient",
+        "value": "linear-gradient(158deg, #fb923c 0%, #ef4444 50%, #b91c1c 100%)",
+        "purpose": "Cover banner and current-role timeline dot only. Never carries text."
+      }
+    ],
+    "shadows": [],
+    "rings": [
+      {
+        "name": "seat-ring",
+        "value": "0 0 0 4px var(--page)",
+        "purpose": "Page-colour ring seating timeline dots and the avatar (6px on the avatar at sm) onto the page."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #dc2626 (dark #f87171); outline-offset: 2px; border-radius: 6px",
+        "purpose": "Global :focus-visible treatment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing for the single load motion."
+      },
+      {
+        "name": "banner-reveal",
+        "value": "900ms; from clip-path inset(0 0 22% 0 round 1rem), saturate(0.6) to inset(0 0 0 0 round 1rem)",
+        "purpose": "Cover banner entrance."
+      },
+      {
+        "name": "avatar-rise",
+        "value": "900ms, 120ms delay; from translateY(10px) scale(0.96)",
+        "purpose": "Avatar entrance, following the banner."
+      },
+      {
+        "name": "state-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1) on color, background, border, transform",
+        "purpose": "Hover colour and arrow nudge."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition-duration: 0.01ms; scroll-behavior: auto",
+        "purpose": "Applied under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      }
+    ],
+    "themes": {
+      "strategy": "class on <html>, 'dark' by default, persisted in localStorage key 'dark-theme', applied before first paint",
+      "themeColor": "#e2232b"
+    }
+  },
+  "components": [
+    {
+      "name": "Outline Link Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Labelled outbound link (GitHub, LinkedIn) with brand icon and external arrow; turns signal red on hover.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"/><path d=\"M9 18c-4.51 2-5-2-7-2\"/></svg>GitHub<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"ds-arrow\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-btn-outline{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--stroke);border-radius:8px;background:transparent;color:var(--ink);font:500 14px/20px ui-sans-serif,system-ui,sans-serif;text-decoration:none;transition:color 150ms,border-color 150ms;} .ds-btn-outline .ds-arrow{color:#78716c;transition:transform 150ms,color 150ms;} .ds-btn-outline:hover{border-color:var(--signal);color:var(--signal);} .ds-btn-outline:hover .ds-arrow{color:currentColor;transform:translate(2px,-2px);} .ds-btn-outline:focus-visible{outline:2px solid var(--signal);outline-offset:2px;border-radius:6px;}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "40px square quiet control for the theme toggle and footer links; tonal fill on hover.",
+      "html": "<button class=\"ds-btn-icon\" type=\"button\" aria-label=\"Switch to light mode\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\"/></svg></button>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-btn-icon{display:grid;place-items:center;width:40px;height:40px;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;transition:background-color 150ms,color 150ms;} .ds-btn-icon:hover{background:var(--chip);color:var(--ink);} .ds-btn-icon:focus-visible{outline:2px solid var(--signal);outline-offset:2px;border-radius:6px;}"
+    },
+    {
+      "name": "Skill Chip",
+      "kind": "chip",
+      "refersTo": "chip-skill",
+      "description": "Static tonal tag listing skills under a role.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\">LangChain</li><li class=\"ds-chip\">Distributed Systems</li></ul>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0;} .ds-chip{padding:4px 10px;border-radius:6px;background:var(--chip);color:var(--secondary);font:500 12px/16px ui-sans-serif,system-ui,sans-serif;}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Sticky 64px bar: display-face name left, muted section links and theme toggle right, 1px rule below.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-name\" href=\"#\">Maruf Ahmed</a><div class=\"ds-nav-right\"><a class=\"ds-nav-link\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\">Experience</a><a class=\"ds-nav-link\" href=\"#\">Education</a><button class=\"ds-nav-toggle\" type=\"button\" aria-label=\"Switch to light mode\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\"/></svg></button></div></nav>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding:0 32px;background:rgba(12,10,9,.95);border-bottom:1px solid var(--rule);color:var(--ink);} .ds-nav-name{font:600 20px/28px 'Afacad Flux Variable',ui-sans-serif,system-ui,sans-serif;letter-spacing:-0.025em;color:var(--ink);text-decoration:none;} .ds-nav-right{display:flex;align-items:center;gap:4px;} .ds-nav-link{padding:8px 12px;border-radius:6px;font:500 14px/20px ui-sans-serif,system-ui,sans-serif;color:var(--muted);text-decoration:none;transition:color 150ms;} .ds-nav-link:hover{color:#fafaf9;} .ds-nav-toggle{display:grid;place-items:center;width:40px;height:40px;margin-left:4px;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;} .ds-nav-toggle:hover{background:var(--chip);color:#fafaf9;} .ds-nav a:focus-visible{outline:2px solid var(--signal);outline-offset:2px;border-radius:6px;} .ds-nav button:focus-visible{outline:2px solid var(--signal);outline-offset:2px;border-radius:6px;}"
+    },
+    {
+      "name": "Cover Banner and Avatar",
+      "kind": "custom",
+      "refersTo": "cover-banner",
+      "description": "Sunset-gradient cover with the round avatar overlapping its lower-left edge; the page's one load motion.",
+      "html": "<div class=\"ds-cover\"><div class=\"ds-banner\" aria-hidden=\"true\"></div><div class=\"ds-avatar\" role=\"img\" aria-label=\"Portrait\"></div></div>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-cover{background:var(--page);padding-bottom:8px;} .ds-banner{height:192px;border-radius:16px;background:var(--sunset);animation:ds-banner 900ms cubic-bezier(0.16,1,0.3,1) both;} .ds-avatar{width:160px;height:160px;margin:-80px 0 0 32px;border-radius:9999px;background:#d6d3d1;box-shadow:0 0 0 6px var(--page);animation:ds-avatar 900ms 120ms cubic-bezier(0.16,1,0.3,1) both;} @keyframes ds-banner{from{clip-path:inset(0 0 22% 0 round 1rem);filter:saturate(.6);}to{clip-path:inset(0 0 0 0 round 1rem);}} @keyframes ds-avatar{from{transform:translateY(10px) scale(.96);}} @media (prefers-reduced-motion: reduce){.ds-banner,.ds-avatar{animation:none;}}"
+    },
+    {
+      "name": "Timeline Item",
+      "kind": "custom",
+      "refersTo": "timeline-item",
+      "description": "Experience and education entry on a 1px spine; sunset dot marks the current role, hollow stone dots mark the rest.",
+      "html": "<ol class=\"ds-tl\"><li class=\"ds-tl-item\"><span class=\"ds-tl-dot ds-tl-dot-current\" aria-hidden=\"true\"></span><div class=\"ds-tl-row\"><div><h3 class=\"ds-tl-title\">Software Engineer</h3><p class=\"ds-tl-sub\">Shopify · Internship</p></div><p class=\"ds-tl-dates\">Sep 2026 – Present<span>3 mos</span></p></div><p class=\"ds-tl-meta\">Toronto, Ontario, Canada · Hybrid</p></li><li class=\"ds-tl-item\"><span class=\"ds-tl-dot\" aria-hidden=\"true\"></span><div class=\"ds-tl-row\"><div><h3 class=\"ds-tl-title\">Software Engineer</h3><p class=\"ds-tl-sub\">RBC · Internship</p></div><p class=\"ds-tl-dates\">May 2026 – Sep 2026<span>5 mos</span></p></div><p class=\"ds-tl-meta\">Toronto, Ontario, Canada · Hybrid</p></li></ol>",
+      "css": ":host{--page:#0c0a09;--ink:#f5f5f4;--muted:#a8a29e;--secondary:#d6d3d1;--rule:#292524;--stroke:#44403c;--chip:#292524;--signal:#f87171;--sunset:linear-gradient(158deg,#fb923c 0%,#ef4444 50%,#b91c1c 100%);} .ds-tl{list-style:none;margin:0 0 0 5px;padding:0;background:var(--page);color:var(--ink);font-family:ui-sans-serif,system-ui,sans-serif;} .ds-tl-item{position:relative;padding:0 0 40px 36px;} .ds-tl-item::before{content:'';position:absolute;left:-0.5px;top:14px;width:1px;height:100%;background:var(--rule);} .ds-tl-item:last-child{padding-bottom:0;} .ds-tl-item:last-child::before{display:none;} .ds-tl-dot{position:absolute;left:-6px;top:9px;width:11px;height:11px;box-sizing:border-box;border-radius:9999px;border:2px solid #57534e;background:var(--page);box-shadow:0 0 0 4px var(--page);} .ds-tl-dot-current{border:0;background:var(--sunset);} .ds-tl-row{display:flex;align-items:baseline;justify-content:space-between;gap:24px;} .ds-tl-title{margin:0;font:600 18px/28px ui-sans-serif,system-ui,sans-serif;} .ds-tl-sub{margin:0;font:400 16px/24px ui-sans-serif,system-ui,sans-serif;color:var(--secondary);} .ds-tl-dates{margin:0;flex-shrink:0;text-align:right;font:400 14px/20px ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--muted);} .ds-tl-dates span{display:block;} .ds-tl-meta{margin:4px 0 0;font:400 14px/20px ui-sans-serif,system-ui,sans-serif;color:var(--muted);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Profile You Already Know How to Read",
+    "overview": "This is the developer-portfolio standard, played straight. A slim sticky nav, a centred reading column, a cover banner with a round avatar overlapping its lower-left edge, a name at display size, two labelled outline buttons, then a vertical timeline of roles and schooling. Nothing asks to be learned. The craft is in exact spacing, honest hierarchy, and restraint rather than in any device the visitor has not seen before.\n\nThe world is warm stone in both modes, dark by default, with a single warm signature: the sunset gradient. It appears exactly twice, as the cover banner and as the current-role marker on the timeline, so the eye finds \"who\" and \"now\" without searching. A red signal (red-600 in light, red-400 in dark) carries interaction: focus rings, the outline-button hover, text selection, native control accents. Afacad Flux, self-hosted, gives the name and section headings a soft, slightly humanist voice; everything a recruiter actually reads is in the system sans.\n\nDensity is low and the page is short. Depth is flat: hairline rules and tonal fills, no shadows. Motion is a single load gesture on the cover and avatar, and it disappears under reduced motion.",
+    "keyCharacteristics": [
+      "Warm stone neutrals in light and dark; class-based dark mode, dark by default, persisted.",
+      "One sunset gradient, two placements: cover banner and current-role dot.",
+      "Red signal reserved for focus, the outline-button hover, and selection.",
+      "Afacad Flux for the name, nav name and section headings only; system sans for reading.",
+      "Flat surfaces: 1px stone rules and tonal chips, no shadows.",
+      "One load motion, 900ms, off under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Two Placements Rule",
+        "body": "The sunset gradient appears on the cover banner and the current-role dot, nowhere else. A third placement dilutes \"now\".",
+        "section": "colors"
+      },
+      {
+        "name": "The Signal Is Interaction Rule",
+        "body": "Red is the answer to the visitor's hand: focus, hover on the primary links, selection. It never decorates static content.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Text On Sunset Rule",
+        "body": "No text sits on the gradient. The old full-bleed header put white on orange; this world refuses it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Display Is For Names Rule",
+        "body": "Afacad Flux sets the name, the nav name and section h2s. Titles, facts, dates and controls stay in the system sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Dates Rule",
+        "body": "Date ranges and durations use tabular numerals and sit right-aligned on desktop, stacked under the title on mobile.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Stone Rule",
+        "body": "Separation is a 1px stone rule or a tonal fill. If a surface seems to need a shadow, it needs a rule instead.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep the sunset gradient to the cover banner and the current-role dot (158deg, orange-400 → red-500 → red-700).",
+      "**Do** use red-600 (light) / red-400 (dark) for focus outlines, outline-button hover and selection, and nothing static.",
+      "**Do** set the name and section headings in Afacad Flux at 600 with -0.025em tracking; set everything else in the system sans.",
+      "**Do** separate with 1px stone rules and tonal fills; seat circles on the page with a page-colour ring.",
+      "**Do** label every outbound link with its name, icon and an external-arrow, and announce new-tab behaviour to screen readers.",
+      "**Do** ship every motion behind `prefers-reduced-motion`; the 900ms banner and avatar reveal is the only load motion.",
+      "**Do** design both themes for every addition; dark is the default."
+    ],
+    "donts": [
+      "**Don't** put text on the sunset gradient or run it full-bleed behind the header.",
+      "**Don't** add shadows, glows or glass effects; this world is flat stone.",
+      "**Don't** use Afacad Flux for body copy, dates, labels or controls.",
+      "**Don't** add new entrance or scroll animations beyond the single header reveal.",
+      "**Don't** introduce a second accent hue; warm stone plus sunset plus signal red is the whole palette."
+    ]
+  }
+}

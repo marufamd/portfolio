@@ -1,10 +1,12 @@
-export default function Section({ name, className, children }: { name: string; className?: string; children?: React.ReactNode }) {
-    return (
-        <section id={name.toLowerCase()} className={`px-10 lg:px-40 pt-10 flex flex-col justify-start ${className}`}>
-            <h1 className="text-[60px] font-['Afacad_Flux'] font-semibold">
-                {name}
-            </h1>
-            {children}
-        </section>
-    );
+import type { ReactNode } from 'react';
+
+export default function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+	return (
+		<section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24 pt-16 sm:pt-20">
+			<h2 id={`${id}-title`} className="mb-8 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+				{title}
+			</h2>
+			{children}
+		</section>
+	);
 }

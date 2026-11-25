@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Maruf Ahmed</title>
-		<meta name="description" content="Computer Science Student @ TMU" />
+		<meta name="description" content="Software Engineer Intern at Shopify. Studying Computer Science at Toronto Metropolitan University." />
 
-		<link rel="icon" href="/favicon.png" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon.png" type="image/png" sizes="128x128" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta name="theme-color" content="#e2232b" />
 		<meta property="og:title" content="Maruf Ahmed" />
-		<meta property="og:description" content="Computer Science Student at Toronto Metropolitan University" />
-		<meta property="og:image" content="%PUBLIC_URL%/thumbnail.png" />
+		<meta property="og:description" content="Software Engineer Intern at Shopify. Studying Computer Science at Toronto Metropolitan University." />
 		<meta property="og:type" content="website" />
+
+		<script>
+			// Apply the saved theme before first paint; dark is the default.
+			document.documentElement.classList.toggle('dark', localStorage.getItem('dark-theme') !== 'false');
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to view this page.</noscript>

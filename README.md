@@ -1,5 +1,10 @@
 # Portfolio
 
-This is the source code for my portfolio website. It is written in TypeScript using React and TailwindCSS.
+Source for [maruf.dev](https://maruf.dev), written in TypeScript with React and Tailwind CSS.
 
-You can view the site [here](https://marufdev.me).
+Experience and education live in `src/util/config.ts`; keep them in step with LinkedIn.
+
+```sh
+npm run dev      # local dev server
+npm run deploy   # build and publish to GitHub Pages
+```

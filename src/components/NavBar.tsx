@@ -1,88 +1,48 @@
-import { RxHamburgerMenu } from 'react-icons/rx';
 import { useEffect, useState } from 'react';
-import { FaMoon } from 'react-icons/fa';
-import { IoCloseSharp, IoSunny } from 'react-icons/io5';
+import { LuMoon, LuSun } from 'react-icons/lu';
 
-import { NAV_LINKS } from '../util/config';
-
-import logo from '../assets/branding/logo.png';
-import darkLogo from '../assets/branding/logo-dark.png';
-import profile from '../assets/branding/profile.png';
+import { NAV_LINKS, USER } from '../util/config';
 
 const THEME_KEY = 'dark-theme';
 
 export default function NavBar() {
-	const [darkTheme, setDarkTheme] = useState(true);
-	const [isOpen, setIsOpen] = useState(false);
-	
-
-	useEffect(() => {
-		const isDark = localStorage.getItem(THEME_KEY) ? localStorage.getItem(THEME_KEY) === 'true' : true;
-
-		localStorage.setItem(THEME_KEY, isDark.toString());
-		setDarkTheme(isDark);
-	}, []);
+	// index.html sets the class before first paint; read it so the toggle starts in sync.
+	const [darkTheme, setDarkTheme] = useState(() => document.documentElement.classList.contains('dark'));
 
 	useEffect(() => {
 		document.documentElement.classList.toggle('dark', darkTheme);
-		localStorage.setItem(THEME_KEY, darkTheme.toString());
+		localStorage.setItem(THEME_KEY, String(darkTheme));
 	}, [darkTheme]);
 
 	return (
-		<nav className="py-1 top-0 sticky z-50 bg-white dark:bg-neutral-800 border-b-gray-100 dark:border-b-neutral-900 border-b-2">
-			<div className="flex items-center justify-between">
-				<div className="hidden md:inline dark:hidden m-2">
-					<img className="h-10" src={logo} alt="Logo" />
-				</div>
-				<div className="hidden dark:md:inline m-2">
-					<img className="h-10" src={darkLogo} alt="Logo" />
-				</div>
-				<div className="md:hidden m-2">
-					<img className="w-10 h-10 rounded-full" src={profile} alt="Logo" />
-				</div>
-
-				<div className="flex items-center justify-center">
-					<div className="flex flex-row justify-center space-x-4 mr-4">
-						{NAV_LINKS.map((link) => {
-							return (
-								<a className="hidden md:inline" key={link} href={`#${link.toLowerCase()}`}>
-									<button type="button" className="font-['Afacad_Flux'] font-semibold text-xl hover:underline hover:underline-offset-8 transition-all">{link}</button>
+		<nav className="sticky top-0 z-50 border-b border-stone-200 bg-stone-50/95 dark:border-stone-800 dark:bg-stone-950/95">
+			<div className="mx-auto flex h-16 max-w-3xl items-center justify-between gap-4 px-5 sm:px-8">
+				<a href="#about" className="font-display text-xl font-semibold tracking-tight">
+					{USER.NAME}
+				</a>
+				<div className="flex items-center gap-1 sm:gap-2">
+					<ul className="hidden items-center gap-1 sm:flex">
+						{NAV_LINKS.map((link) => (
+							<li key={link.href}>
+								<a
+									href={link.href}
+									className="rounded-md px-3 py-2 text-sm font-medium text-stone-600 transition-colors hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-50"
+								>
+									{link.label}
 								</a>
-							);
-						})}
-					</div>
+							</li>
+						))}
+					</ul>
 					<button
 						type="button"
-						onClick={() => {
-							setIsOpen((prev) => !prev);
-						}}
-						className="md:hidden m-2 p-2 mr-1 rounded-md bg-gray-100 dark:bg-neutral-900 hover:transition-all hover:opacity-75"
+						onClick={() => setDarkTheme((prev) => !prev)}
+						aria-label={darkTheme ? 'Switch to light mode' : 'Switch to dark mode'}
+						title={darkTheme ? 'Switch to light mode' : 'Switch to dark mode'}
+						className="grid h-10 w-10 place-items-center rounded-lg text-stone-600 transition-colors hover:bg-stone-200/70 hover:text-stone-900 dark:text-stone-400 dark:hover:bg-stone-800 dark:hover:text-stone-50"
 					>
-						{isOpen ? <IoCloseSharp className="h-6 w-6" /> : <RxHamburgerMenu className="h-6 w-6" />}
-					</button>
-					<button
-						type="button"
-						onClick={() => {
-							setDarkTheme((prev) => !prev);
-						}}
-						className="m-2 p-2 ml-1 rounded-md bg-gray-100 dark:bg-neutral-900 hover:transition-all hover:opacity-75"
-					>
-						{darkTheme ? <IoSunny className="w-6 h-6" /> : <FaMoon className="w-6 h-6" />}
+						{darkTheme ? <LuSun className="h-5 w-5" aria-hidden /> : <LuMoon className="h-5 w-5" aria-hidden />}
 					</button>
 				</div>
-			</div>
-			<div
-				className={`${
-					isOpen ? '' : 'hidden'
-				} flex flex-col space-y-1 items-end justify-center px-4 py-2 mt-1 border-t-gray-100 dark:border-t-neutral-900 border-t-2`}
-			>
-				{NAV_LINKS.map((link) => {
-					return (
-						<a className="block font-semibold font-['Afacad_Flux'] text-xl hover:underline hover:underline-offset-8 transition-all" key={link} href={`#${link.toLowerCase()}`}>
-							{link}
-						</a>
-					);
-				})}
 			</div>
 		</nav>
 	);
